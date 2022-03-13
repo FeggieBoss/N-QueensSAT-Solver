@@ -17,7 +17,7 @@ fromVarToIndex n v = ((v-1) `divInt` n, (v-1) `modInt` n)
 
 -- проверяем бьют ли друг друга королевы
 isCollision :: (Int, Int) -> (Int, Int) -> Bool
-isCollision (i1,j1) (i2,j2) = or [i1==i2, j1==j2, abs (i1-i2) == abs(j1-j2)]
+isCollision (i1,j1) (i2,j2) = or [i1==i2, j1==j2, abs (i1-i2) == abs (j1-j2)]
 
 -- генерируем КНФ-формулу 
 genCNF :: Int -> CNF

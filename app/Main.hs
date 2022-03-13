@@ -1,4 +1,3 @@
-{-# LANGUAGE InstanceSigs #-}
 module Main where
 
 import System.Environment (getArgs)
