@@ -3,8 +3,8 @@ import Test.Tasty.HUnit (assertBool, testCase)
 import Picosat
 import GenCNF
 
-unitTests :: TestTree
-unitTests = testGroup "UnitTests:" [satisfiable, unsatisfiable]
+tests :: TestTree
+tests = testGroup "Tests:" [satisfiable, unsatisfiable]
 
 satisfiable :: TestTree 
 satisfiable = testGroup
@@ -46,4 +46,4 @@ checkUNSAT n = case unsafeSolve $ genCNF n of
     otherwise     -> False
 
 main :: IO ()
-main = defaultMain unitTests
+main = defaultMain tests
