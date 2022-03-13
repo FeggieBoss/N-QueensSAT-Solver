@@ -23,7 +23,7 @@ $> stack test
 ### Пример:
 ```
 $> stack test
-UnitTests:
+Tests:
   Satisfiable Tests
     Trivial
       n = 0:  OK
